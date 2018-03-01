@@ -31,17 +31,16 @@ Git is what is known as version control software ...
  System.out.println("Hello!"); }`
  2. Now, time for the good stuff! When we want to save, or "push" our code to our remote repository (the repository on Github where your code is stored), we first need to add the files we want to save to be tracked by git and "commit" the changes we made to our code. This whole process takes four steps:
     1. Run the command `git status` in your project folder. This will show you both changes to "tracked" (files already being    watched by git) and "untracked" (new) files. You should see the following message from this command:
-    ``` On branch master
+    ``` 
+    On branch master
     Your branch is up-to-date with 'origin/master'.
-
-   Changes not staged for commit:
+    Changes not staged for commit:
      (use "git add <file>..." to update what will be committed)
      (use "git checkout -- <file>..." to discard changes in working directory)
-
-	   modified:   Greeting.java
- 
-   no changes added to commit (use "git add" and/or "git commit -a") 
-   ```
+     	modified:   Greeting.java
+     no changes added to commit (use "git add" and/or "git commit -a") 
+    ```
+   
    2. Add the changes you want to save to your commit by running `git add <file name>`. Do this for both modified and untracked files. Note that in coding directions, words inside angle brackets (< ... >) mean "fill in the blank with your file name, word, port, etc".
    3. Now, make your commit by running the command `git commit -m <message>` where "message" is a message describing the commit. These messages should be short (not much more than a sentence long) and describe what was accomplished with the commit. An example of a good commit message would be: "Made the greeting method in class Greeting static".
    4. You're finally ready to push your code to your Github repository! Run the command `git push origin master` to push the code. If you run `git status` again you'll get a message saying you're up-to-date with origin/master!
