@@ -2,10 +2,11 @@
 Introductory Git Version Control Workshop taught at Timberline High School for my Project-Based Instruction Class.
 
 ## Introduction
-Hello, students! By now, you should have created your own Github account and registered for the Github Student Developer Pack. Congratulations! You've taken your first steps towards managing your code better and becoming part of the open source community. Now, it's time to learn *how* to better manage your class codebase using Git.
+Hello, students! By now, you should have created your own Github account and registered for the Github Student Developer Pack. Congratulations! You've taken your first steps towards managing your code efficiently and becoming part of the open source community. Now, it's time to learn *how* to better manage your class codebase using Git.
 
 ## What is Git?
-Git is what is known as version control software ...
+Git is what is known as version control software - it helps you manage your code by keeping track of its state over time, including additions, deletions, and changes. Github is a website that integrates with Git and functions a lot like Google Drive - but specifically for code. It lets you use the command line (or .zip files) to download your code, make changes, and save it on Github's servers, and serves as a backup if something happens to your files on your computer. A Git repository tracks all of the changes you make to your code, so that you can go back to a previous version of your project at any time! Having a copy of your code on Github's servers that you can access from anywhere also helps you manage your code across different computers efficiently. Professional coders and college students all over the world use Git to manage their code, and after this period you’ll have a valuable skill that will help you not only for the rest of AP CS, but for your whole coding career!
+
 
 ## Vocabulary Bank
 * **Repository:** A project folder or collection of project folders connected to Git where you put your code files.
