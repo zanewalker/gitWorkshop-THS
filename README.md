@@ -20,7 +20,7 @@ Git is what is known as version control software - it helps you manage your code
 ### Forking a Repository
 
  1. Navigate to  [my Github repository for this lesson](https://github.com/lbosse/gitWorkshop-THS) (If you're reading my README you should already be here...).
- 2. Click the "fork" button in the upper right hand corner of the screen. This will create your own personal copy of the repository in your account, where you can modify it freely without changing the code in my repository. This is often used when using someone else's code as a starting point for your own project or for proposing changes to their project. For more information, check out [this page](https://help.github.com/articles/fork-a-repo/).
+ 2. Click the "fork" button in the upper right hand corner of the screen. This will create your own personal copy of the repository in your account, where you can modify it freely without changing the code in my repository. This is often used when using someone else's code as a starting point for your own project or for proposing changes to their project. If you want to learn more about this after the lesson, check out [this page](https://help.github.com/articles/fork-a-repo/).
  3. You should now see your own copy of this repository on your Github profile page! Click on the repository name to go to it's page.
  4. You'll see a lot of buttons and options on this page! We'll get to those shortly. For now, click on the **"Clone or Download"** button and copy the link it gives you. You can also download it as a .zip file, but we're going to do things the cool way ;)
  
