@@ -7,6 +7,13 @@ Hello, students! By now, you should have created your own Github account and reg
 ## What is Git?
 Git is what is known as version control software ...
 
+## Vocabulary Bank
+* **Repository:** A project folder or collection of project folders connected to Git where you put your code files.
+* **Local:** Something residing on your computer - in this case, the copy of your repository saved on your laptop!
+* **Remote:** Something residing on someone else's computer - in this case, the repository on your Github account!
+* **Commit:** Recording the changes to the code in your local repository to be saved in your remote repository.
+* **Push:** Saving the commited changes to your local repository in your remote repository by "pushing" them up to Github's servers.
+
 ## It's coding time!
 ### Forking a Repository
 
