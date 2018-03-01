@@ -14,6 +14,7 @@ Git is what is known as version control software - it helps you manage your code
 * **Remote:** Something residing on someone else's computer - in this case, the repository on your Github account!
 * **Commit:** Recording the changes to the code in your local repository to be saved in your remote repository.
 * **Push:** Saving the commited changes to your local repository in your remote repository by "pushing" them up to Github's servers.
+* **origin/master:** "origin" is your remote repository, and "master" is the main branch of your remote and local repository. A "branch" is a specific version of your repository, but we'll get to that later if we have time! For now, just know that "origin/master" is your remote repository (the one on your Github account) :)
 
 ## It's coding time!
 ### Forking a Repository
@@ -24,14 +25,14 @@ Git is what is known as version control software - it helps you manage your code
  4. You'll see a lot of buttons and options on this page! We'll get to those shortly. For now, click on the **"Clone or Download"** button and copy the link it gives you. You can also download it as a .zip file, but we're going to do things the cool way ;)
  
  ### Cloning a Repository to Your Computer
- 1. Now that you've got the ".git" link to your repository, open up your terminal and navigate to the directory where you want to place your project folder. Once you're there, type this command into the terminal: `https://github.com/lbosse/gitWorkshop-THS.git`.
+ 1. Now that you've got the ".git" link to your repository, open up your terminal and navigate to the directory where you want to place your project folder. Once you're there, type this command into the terminal: `git clone https://github.com/lbosse/gitWorkshop-THS.git`.
  2. You're ready to start working!
  
  ### Committing to a Repository
- 1. Open up the file `Greeting.java` with your favorite text editor and add the following method: `public void sayHello() {
+ 1. Open up the file `Greeting.java` with your favorite text editor and add the following method to the `Greeting` class: `public void sayHello() {
  System.out.println("Hello!"); }`
- 2. Now, time for the good stuff! When we want to save, or "push" our code to our remote repository (the repository on Github where your code is stored), we first need to add the files we want to save to be tracked by git and "commit" the changes we made to our code. This whole process takes four steps:
-    1. Run the command `git status` in your project folder. This will show you both changes to "tracked" (files already being    watched by git) and "untracked" (new) files. You should see the following message from this command:
+ 2. Now, time for the good stuff! When we want to save, or "push" our code to our remote repository (the repository on Github where your code is stored), we first need to record our changes by "commiting" the changes we made to our code. This whole process takes four quick steps:
+    1. Run the command `git status` in your project folder. This will show you both changes to "tracked" (files already being watched by git) and "untracked" (new) files. You should see the following message from this command:
     ``` 
     On branch master
     Your branch is up-to-date with 'origin/master'.
