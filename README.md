@@ -68,11 +68,13 @@ myAPCSRepo/
 In this case, the name of the repository is "myAPCSRepo".
 If this step takes you a while, don't feel bad about using Ubuntu's file explorer program to create folders and move stuff around instead of the command line!
 
-2. Once you've created your directory structure, go to your GitHub account "Repositories" page and create a new repository! This repository will have the same name as the one you just created on your computer. Be sure to mark the repository as "public" (only public repositories are free until you have the Student Developer Pack) and un-check the box that says "initialize this repository with a README". Some images to guide you through this process are below:
+2. Once you've created your directory structure, go to your GitHub account "Repositories" page and create a new repository! This repository will have the same name as the one you just created on your computer. Be sure to mark the repository as "public" (only public repositories are free until you have the Student Developer Pack) and un-check the box that says "initialize this repository with a README". Some images to guide you through this process are included below:
+
 Go to the "Repositories" page:
-![repositories page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/indicateNewRepoButton.png "Go to the Repositories page")
+![repositories page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/indicateRepoPage.png "Go to the Repositories page")
+
 Click the "New" repository button:
-![new repo button](https://github.com/lbosse/gitWorkshop-THS/images/indicateRepoButton.png "Click this button to create a new repository")
+![new repo button](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/indicateNewRepoButton.png "Click this button to create a new repository")
 
 3. Next, GitHub will show you the following commands to run in your local repository to link it to the remote repository you just created:
 ```
