@@ -70,7 +70,7 @@ If this step takes you a while, don't feel bad about using Ubuntu's file explore
 
 2. Once you've created your directory structure, go to your GitHub account "Repositories" page and create a new repository! This repository will have the same name as the one you just created on your computer. Be sure to mark the repository as "public" (only public repositories are free until you have the Student Developer Pack) and un-check the box that says "initialize this repository with a README". Some images to guide you through this process are below:
 Go to the "Repositories" page:
-![repositories page](https://github.com/lbosse/gitWorkshop-THS/images/indicateRepoPage.png "Go to the Repositories page")
+![repositories page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/indicateNewRepoButton.png "Go to the Repositories page")
 Click the "New" repository button:
 ![new repo button](https://github.com/lbosse/gitWorkshop-THS/images/indicateRepoButton.png "Click this button to create a new repository")
 
