@@ -47,3 +47,40 @@ Git is what is known as version control software - it helps you manage your code
    3. Now, make your commit by running the command `git commit -m <message>` where "message" is a message describing the commit. These messages should be short (not much more than a sentence long) and describe what was accomplished with the commit. An example of a good commit message would be: "Made the greeting method in class Greeting static".
    4. You're finally ready to push your code to your Github repository! Run the command `git push origin master` to push the code. If you run `git status` again you'll get a message saying you're up-to-date with origin/master!
 3. Congratulations! You've successfully updated your first Github repository :)
+
+### Creating Your Class Repository
+Now, we're going to create a repository where you can store all of your code for this class!
+1. Before we do anything on GitHub, we need to create a folder structure to organize your existing projects and homeworks for this class. Remember that to make a directory (folder) on the command line, you use the following commands: 
+   1. Create a directory: `mkdir <directory name>`
+   2. Go into a directory: `cd <directory name>`
+   3. Go up a directory: `cd ../`
+
+Now, you'll need to download all of your projects and homeworks from Google Drive and place them in a single set of directories (folders). This set of directories will be your local repository, and the repository name will be the name of the top level directory. I recommend creating a directory structure for your repository like this:
+```
+myAPCSRepo/
+..............projects/
+..........................project1/
+..........................project2/
+..............homework/
+..........................hw1/
+..........................hw2/
+```
+In this case, the name of the repository is "myAPCSRepo".
+If this step takes you a while, don't feel bad about using Ubuntu's file explorer program to create folders and move stuff around instead of the command line!
+
+2. Once you've created your directory structure, go to your GitHub account "Repositories" page and create a new repository! This repository will have the same name as the one you just created on your computer. Be sure to mark the repository as "public" (only public repositories are free until you have the Student Developer Pack) and un-check the box that says "initialize this repository with a README". Some images to guide you through this process are below:
+Go to the "Repositories" page:
+![repositories page](https://github.com/lbosse/gitWorkshop-THS/images/indicateRepoPage.png "Go to the Repositories page")
+Click the "New" repository button:
+![new repo button](https://github.com/lbosse/gitWorkshop-THS/images/indicateRepoButton.png "Click this button to create a new repository")
+
+3. Next, GitHub will show you the following commands to run in your local repository to link it to the remote repository you just created:
+```
+echo "# sample" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lbosse/sample.git
+git push -u origin master
+```
+go into the main directory (in the example above, `myAPCSRepo/`), and run the commands as shown. You've now got all of your code for this class saved in your own GitHub repository that you can easily access from anywhere!
