@@ -17,6 +17,16 @@ Git is what is known as version control software - it helps you manage your code
 * **origin/master:** "origin" is your remote repository, and "master" is the main branch of your remote and local repository. A "branch" is a specific version of your repository, but we'll get to that later if we have time! For now, just know that "origin/master" is your remote repository (the one on your Github account) :)
 
 ## It's coding time!
+
+### Installing Git
+To install Git, open up your command line and run the following two commands in the order shown below:
+```
+sudo apt-get update
+sudo apt-get install git
+```
+This installs Git using Ubuntu's package management system, a tool that helps you install and update programs on your computer via the command line.
+**Note:** The "`sudo`" command will ask for a password. This is the administrator password for your computer. Luke or Ms. Pluska will give you the password at the beginning of class.
+
 ### Forking a Repository
 
  1. Navigate to  [my Github repository for this lesson](https://github.com/lbosse/gitWorkshop-THS) (If you're reading my README you should already be here...).
