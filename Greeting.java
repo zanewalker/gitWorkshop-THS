@@ -10,4 +10,8 @@ public class Greeting {
    System.out.println(greeting);
  }
 
+ public void sayHello() { 
+   System.out.println("Hello!"); 
+ }
+
 }
