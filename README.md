@@ -163,7 +163,8 @@ Automatic merge failed; fix conflicts and then commit the result.
     **Congratulations! You just solved your first merge conflict, a major step in your journey with Git!**
     
 ### Extras
-If you want a really cool intro to the GitHub workflow and another explanation of the branching and merging process, checkout [this article](https://guides.github.com/introduction/flow/) from GitHub!
+If you want a really cool intro to the GitHub workflow and another explanation of the branching and merging process, checkout [this article](https://guides.github.com/introduction/flow/) from GitHub!  
+You can also check out [GitHub's article on resolving merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/).
 
 ### Sources
 Merge conflict tutorial informed by [JonathanMH's tutorial](https://jonathanmh.com/how-to-create-a-git-merge-conflict/).
