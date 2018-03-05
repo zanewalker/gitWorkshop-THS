@@ -26,10 +26,14 @@ Git is what is known as version control software - it helps you manage your code
    ```
    This installs Git using Ubuntu's package management system, a tool that helps you install and update programs on your    computer via the command line.
    **Note:** The "`sudo`" command will ask for a password. This is the administrator password for your computer. Luke or Ms.      Pluska will give you the password at the beginning of class.
-2. Set the Git username and email on your local computer to the ones you used on your GitHub account using the following commands:  
+2. Anyone who has access to your repository can see your commits and the email address associated with them. Since we're using the free account right now, we need to use the no-reply email address that GitHub gives you as your commit email in order to stay safe online. To find it, go to the Email page under your account's Settings page and look at the "Primary Email" section below. Below are some pictures to help you find it:  
+![settings page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/settings.png)
+![email page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/emailSettings.png)
+![noreply email](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/noreplyEmail.png)  
+3. Set the Git commit username and email on your local computer to the ones you used on your GitHub account using the following commands:  
    `git config --global user.name "<your-name-here>"`  
    `git config --global user.email "<your-email-here>"`  
-   Where `<your-name-here>` is your GitHub username and `<your-email-here>` is your GitHub email. 
+   Where `<your-name-here>` is your GitHub username and `<your-email-here>` is your GitHub no-reply email. 
    You can check to see if you set your name and email correctly using the command: `git config --list`.
 
 ### Forking a Repository
