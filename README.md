@@ -161,3 +161,9 @@ Automatic merge failed; fix conflicts and then commit the result.
     `git commit -m "modifyHello merged into master"`
     Git will tell you after you commit that your branch has been merged.   
     **Congratulations! You just solved your first merge conflict, a major step in your journey with Git!**
+    
+### Extras
+If you want a really cool intro to the GitHub workflow and another explanation of the branching and merging process, checkout [this article](https://guides.github.com/introduction/flow/) from GitHub!
+
+### Sources
+Merge conflict tutorial informed by [JonathanMH's tutorial](https://jonathanmh.com/how-to-create-a-git-merge-conflict/).
