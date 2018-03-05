@@ -100,8 +100,8 @@ go into the main directory (in the example above, `myAPCSRepo/`), and run the co
 
 ### Resolving Merge Conflicts
 Merge conflicts arise when different changes that have been made to two different local copies of the same file need to be reconciled. Imagine Alice and Bob are on a team working on the same software. If Alice makes changes to a file and pushes it to their shared GitHub repository, but Bob made different changes to the same lines of his copy of the file, and he tries to push his code, GitHub will ask Bob and Alice to choose which changes to incorporate into the file in the repository. 
-Merge conflicts happen most often when someone creates a *branch* off a repository. A branch is a copy of a project that can be edited and later incorporated back into the master branch, the definitive codebase of that repository. Branches have their name because if you model them as a tree structure, well, they look like branches! 
-[GitHub flow](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjPj4ndsdTZAhVXz2MKHYLsAosQjRx6BAgAEAY&url=https%3A%2F%2Fwww.slideshare.net%2FLoveJuhee%2Fgit-75764538&psig=AOvVaw0uBfwGW7tVVnpJ-nMEHHJw&ust=1520311911469310)  
+Merge conflicts happen most often when someone creates a *branch* off a repository. A branch is a copy of a project that can be edited and later incorporated back into the master branch, the definitive codebase of that repository. Branches have their name because if you model them as a tree structure, well, they look like branches!  
+[GitHub flow](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/gitHubFlow.png)    
 In the above code, each circle represents a commit.  
 To get practice resolving merge conflicts, follow the directions below:
 1. Using your favorite text editor, create a file named `hello.txt` in your local repository. `hello.txt` should contain the following:
