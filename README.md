@@ -97,3 +97,6 @@ git remote add origin https://github.com/lbosse/sample.git
 git push -u origin master
 ```
 go into the main directory (in the example above, `myAPCSRepo/`), and run the commands as shown. You've now got all of your code for this class saved in your own GitHub repository that you can easily access from anywhere!
+
+### Resolving Merge Conflicts
+Merge conflicts arise when different changes that have been made to two different local copies of the same file need to be reconciled. Imagine Alice and Bob are on a team working on the same software. If Alice makes changes to a file and pushes it to their shared GitHub repository, but Bob made different changes to the same lines of his copy of the file, and he tries to push his code, GitHub will ask Bob and Alice to choose which changes to incorporate into the file in the repository. 
