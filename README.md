@@ -159,4 +159,5 @@ Automatic merge failed; fix conflicts and then commit the result.
 12. After merge conflicts have been resolved, add and commit your changes using the following commands:
     `git add hello.txt`  
     `git commit -m "modifyHello merged into master"`
-    Git will tell you after you commit that your branch has been merged. Congratulations! You just solved your first merge conflict, a major step in your journey with Git!
+    Git will tell you after you commit that your branch has been merged.   
+    **Congratulations! You just solved your first merge conflict, a major step in your journey with Git!**
