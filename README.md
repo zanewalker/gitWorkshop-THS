@@ -19,13 +19,18 @@ Git is what is known as version control software - it helps you manage your code
 ## It's coding time!
 
 ### Installing Git
-To install Git, open up your command line and run the following two commands in the order shown below:
-```
-sudo apt-get update
-sudo apt-get install git
-```
-This installs Git using Ubuntu's package management system, a tool that helps you install and update programs on your computer via the command line.
-**Note:** The "`sudo`" command will ask for a password. This is the administrator password for your computer. Luke or Ms. Pluska will give you the password at the beginning of class.
+1. To install Git, open up your command line and run the following two commands in the order shown below:
+   ```
+   sudo apt-get update
+   sudo apt-get install git
+   ```
+   This installs Git using Ubuntu's package management system, a tool that helps you install and update programs on your    computer via the command line.
+   **Note:** The "`sudo`" command will ask for a password. This is the administrator password for your computer. Luke or Ms.      Pluska will give you the password at the beginning of class.
+2. Set the Git username and email on your local computer to the ones you used on your GitHub account using the following commands:  
+   `git config --global user.name "<your-name-here>"`  
+   `git config --global user.email "<your-email-here>"`  
+   Where `<your-name-here>` is your GitHub username and `<your-email-here>` is your GitHub email. 
+   You can check to see if you set your name and email correctly using the command: `git config --list`.
 
 ### Forking a Repository
 
