@@ -100,3 +100,63 @@ go into the main directory (in the example above, `myAPCSRepo/`), and run the co
 
 ### Resolving Merge Conflicts
 Merge conflicts arise when different changes that have been made to two different local copies of the same file need to be reconciled. Imagine Alice and Bob are on a team working on the same software. If Alice makes changes to a file and pushes it to their shared GitHub repository, but Bob made different changes to the same lines of his copy of the file, and he tries to push his code, GitHub will ask Bob and Alice to choose which changes to incorporate into the file in the repository. 
+Merge conflicts happen most often when someone creates a *branch* off a repository. A branch is a copy of a project that can be edited and later incorporated back into the master branch, the definitive codebase of that repository. Branches have their name because if you model them as a tree structure, well, they look like branches! 
+[GitHub flow](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjPj4ndsdTZAhVXz2MKHYLsAosQjRx6BAgAEAY&url=https%3A%2F%2Fwww.slideshare.net%2FLoveJuhee%2Fgit-75764538&psig=AOvVaw0uBfwGW7tVVnpJ-nMEHHJw&ust=1520311911469310)  
+In the above code, each circle represents a commit.  
+To get practice resolving merge conflicts, follow the directions below:
+1. Using your favorite text editor, create a file named `hello.txt` in your local repository. `hello.txt` should contain the following:
+   ```
+   Hello.
+   ```
+2. Add and commit your changes using the following two commands in order:  
+   `git add hello.txt`  
+   `git commit -m "first hello edit in master"`
+3. Create a new branch named `modifyHello` using this command: `git checkout -b modifyHello`.
+   * The `git checkout <name>` command switches to a branch of a given `name`. Adding the `-b` option tells Git to first create this branch before switching into it. 
+4. Run to command `git branch` to see which branch you're in. It should output the following:
+   ```
+   master
+   * modifyHello
+   ```
+   The `*` tells you which branch you're in.
+5. Now, in the `modifyHello` branch, edit `hello.txt` to contain the following:
+   ```
+   Hello, world!
+   ```
+6. Add and commit your changes using the following two commands in order:  
+   `git add hello.txt`  
+   `git commit -m "first hello edit in modifyHello"`
+7. Switch back into the master branch using this command: `git checkout master`.
+8. Modify `hello.txt` one more time. Edit it to contain the following:
+   ```
+   Hello, world.
+   ```
+9. Add and commit your changes using the following two commands in order:   
+   `git add hello.txt`  
+   `git commit -m "second hello edit in master"`
+10. Now, we're going to merge the code from our `modifyHello` branch into our `master` branch! This will try to incorporate any changes we made in our `modifyHello` branch into `master`. If there are conflicting edits on the same lines of code (like we just created!) Git will ask us to resolve the conflicts! Merge the code by running the following command:
+   ```
+   git merge modifyHello
+   ```
+The above command should produce this output:
+```
+Auto-merging hello.txt
+CONFLICT (content): Merge conflict in hello.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+11. Fix the merge conflicts. When merge conflicts occur in a file, Git marks them using the following markers:
+    ```
+    <<<<<<< HEAD
+    Hello, world.
+    =======
+    Hello, world!
+    >>>>>>> modifyHello
+    ```
+    The space between `<<<<<<< HEAD` and `=======` are the changes in master, and the changes between `=======` and `>>>>>>>    modifyHello` are the changes in `modifyHello`. To resolve the merge conflict, delete the conflict markers and incorporate the changes you want to save!  
+    Let's delete the conflict markers to leave just the following:
+    `Hello, world!`
+    That's a nice, friendly message! :)
+12. After merge conflicts have been resolved, add and commit your changes using the following commands:
+    `git add hello.txt`  
+    `git commit -m "modifyHello merged into master"`
+    Git will tell you after you commit that your branch has been merged. Congratulations! You just solved your first merge conflict, a major step in your journey with Git!
