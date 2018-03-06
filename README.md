@@ -26,10 +26,14 @@ Git is what is known as version control software - it helps you manage your code
    ```
    This installs Git using Ubuntu's package management system, a tool that helps you install and update programs on your    computer via the command line.
    **Note:** The "`sudo`" command will ask for a password. This is the administrator password for your computer. Luke or Ms.      Pluska will give you the password at the beginning of class.
-2. Set the Git username and email on your local computer to the ones you used on your GitHub account using the following commands:  
+2. Anyone who has access to your repository can see your commits and the email address associated with them. Since we're using the free account right now, we need to use the no-reply email address that GitHub gives you as your commit email in order to stay safe online. To find it, go to the Email page under your account's Settings page and look at the "Primary Email" section below. Below are some pictures to help you find it:  
+![settings page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/settings.png)
+![email page](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/emailSettings.png)
+![noreply email](https://raw.githubusercontent.com/lbosse/gitWorkshop-THS/master/images/noreplyEmail.png)  
+3. Set the Git commit username and email on your local computer to the ones you used on your GitHub account using the following commands:  
    `git config --global user.name "<your-name-here>"`  
    `git config --global user.email "<your-email-here>"`  
-   Where `<your-name-here>` is your GitHub username and `<your-email-here>` is your GitHub email. 
+   Where `<your-name-here>` is your GitHub username and `<your-email-here>` is your GitHub no-reply email. 
    You can check to see if you set your name and email correctly using the command: `git config --list`.
 
 ### Forking a Repository
@@ -59,8 +63,8 @@ Git is what is known as version control software - it helps you manage your code
      no changes added to commit (use "git add" and/or "git commit -a") 
     ```
    
-   2. Add the changes you want to save to your commit by running `git add <file name>`. Do this for both modified and untracked files. Note that in coding directions, words inside angle brackets (< ... >) mean "fill in the blank with your file name, word, port, etc".
-   3. Now, make your commit by running the command `git commit -m <message>` where "message" is a message describing the commit. These messages should be short (not much more than a sentence long) and describe what was accomplished with the commit. An example of a good commit message would be: "Made the greeting method in class Greeting static".
+   2. Git is telling us that changes to `Greeting.java` are not staged for commit. "Staging a file for commit" means that we tell Git we want to record changes to that file. Add the changes you want to record with your commit by running `git add <file name>`. Do this for both modified and untracked files. Note that in coding directions, words inside angle brackets (< ... >) mean "fill in the blank with your file name, word, etc".
+   3. Now, make your commit and record your changes by running the command `git commit -m <message>` where "message" is a message describing the commit. These messages should be short (not much more than a sentence long) and describe what was accomplished with the commit. An example of a good commit message would be: "Made the greeting method in class Greeting static".
    4. You're finally ready to push your code to your Github repository! Run the command `git push origin master` to push the code. If you run `git status` again you'll get a message saying you're up-to-date with origin/master!
 3. Congratulations! You've successfully updated your first Github repository :)
 
