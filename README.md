@@ -63,7 +63,7 @@ Git is what is known as version control software - it helps you manage your code
      no changes added to commit (use "git add" and/or "git commit -a") 
     ```
    
-   2. Git is telling us that changes to `Greeting.java` are not staged for commit. "Staging a file for commit" means that we tell Git we want to record changes to that file. Add the changes you want to record with your commit by running `git add <file name>`. Do this for both modified and untracked files. Note that in coding directions, words inside angle brackets (< ... >) mean "fill in the blank with your file name, word, etc".
+   2. Git is telling us that changes to `Greeting.java` are not staged for commit. "Staging a file for commit" means that we tell Git we want to record changes to that file. Add the changes you want to record with your commit by running `git add <file name>`. Note that in coding directions, words inside angle brackets (< ... >) mean "fill in the blank with your file name, word, etc".
    3. Now, make your commit and record your changes by running the command `git commit -m <message>` where "message" is a message describing the commit. These messages should be short (not much more than a sentence long) and describe what was accomplished with the commit. An example of a good commit message would be: "Made the greeting method in class Greeting static".
    4. You're finally ready to push your code to your Github repository! Run the command `git push origin master` to push the code. If you run `git status` again you'll get a message saying you're up-to-date with origin/master!
 3. Congratulations! You've successfully updated your first Github repository :)
